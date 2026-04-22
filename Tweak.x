@@ -124,7 +124,7 @@
             if ([key containsString:@"shorts"] && [description containsString:@"history*"]) {
                 return %orig;
             }
-            return nil;
+            return [NSData data];
         }
     }
     return %orig;
