@@ -9,7 +9,6 @@
 #import <YouTubeHeader/YTSettingsSectionItemManager.h>
 #import <YouTubeHeader/YTSettingsViewController.h>
 #import <YouTubeHeader/YTUIUtils.h>
-#import <substrate.h>
 #import "Headers.h"
 
 #define TweakName @"YouMod"
@@ -42,11 +41,12 @@ NSBundle *YouModBundle() {
 - (void)loadWithModel:(id)model fromView:(UIView *)view {
     %orig;
     if ([[self valueForKey:@"_detailsCategoryID"] integerValue] == TweakSection)
-        MSHookIvar<BOOL>(self, "_shouldShowSearchBar") = YES;
+        [self setValue:@(YES) forKey:@"_shouldShowSearchBar"];
 }
 - (void)setSectionControllers {
     %orig;
-    if (MSHookIvar<BOOL>(self, "_shouldShowSearchBar")) {
+    BOOL showSearchBar = [[self valueForKey:@"_shouldShowSearchBar"] boolValue];
+    if (showSearchBar) {
         YTSettingsSectionController *settingsSectionController = [self settingsSectionControllers][[self valueForKey:@"_detailsCategoryID"]];
         YTSearchableSettingsViewController *searchableVC = [self valueForKey:@"_searchableSettingsViewController"];
         if (settingsSectionController)

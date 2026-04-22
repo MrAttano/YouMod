@@ -75,6 +75,7 @@
 @end
 
 @interface YTNavigationBarTitleView : UIView
+- (void)alignCustomViewToCenterOfWindow;
 @end
 
 @interface YTChipCloudCell : UICollectionViewCell
@@ -317,10 +318,6 @@
 @property (readonly, nonatomic) NSString *videoID;
 - (void)setPlaybackRate:(CGFloat)rate;
 - (CGFloat)currentPlaybackRate;
-@end
-
-@interface YTNavigationBarTitleView : UIView
-- (void)alignCustomViewToCenterOfWindow;
 @end
 
 @interface YTFormattedStringLabel : UILabel
