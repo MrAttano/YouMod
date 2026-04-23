@@ -263,12 +263,6 @@
 - (BOOL)enablePlayerBarForVerticalVideoWhenControlsHiddenInFullscreen { return YES; }
 %end
 
-%hook YTColdConfig
-- (BOOL)mainAppCoreClientIosEnableStartupAnimation {  // Works!
-    return NO;
-}
-%end
-
 %hook YTHeaderView
 - (BOOL)stickyNavHeaderEnabled { return YES; } // idk what is this does, the nav is already sticky... 
 %end
