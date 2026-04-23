@@ -125,8 +125,18 @@
 
 - (void)didMoveToWindow {
     %orig;
-    if (IS_ENABLED(HideHoriShelf) && [self.accessibilityIdentifier isEqualToString:@"horizontal-video-shelf.view"]) self.hidden = YES; [self removeFromSuperview];
-	if (IS_ENABLED(HideGenMusicShelf) && [self.accessibilityIdentifier isEqualToString:@"feed_nudge.view"]) self.hidden = YES; [self removeFromSuperview];
+    if (IS_ENABLED(HideHoriShelf) && [self.accessibilityIdentifier isEqualToString:@"horizontal-video-shelf.view"]) {
+        self.hidden = YES;
+        [self removeFromSuperview];
+    }
+	if (IS_ENABLED(HideGenMusicShelf) && [self.accessibilityIdentifier isEqualToString:@"feed_nudge.view"]) {
+        self.hidden = YES;
+        [self removeFromSuperview];
+    }
+    if ([self.accessibilityIdentifier isEqualToString:@"id.reel_remix_button"]) {
+        self.hidden = YES;
+        [self removeFromSuperview];
+    }
 }
 
 %end
