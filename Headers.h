@@ -16,6 +16,7 @@
 #import <YouTubeHeader/YTVideoQualitySwitchOriginalController.h>
 #import <YouTubeHeader/YTVideoQualitySwitchRedesignedController.h>
 #import <YouTubeHeader/YTInnerTubeCollectionViewController.h>
+#import <YouTubeHeader/YTIShowFullscreenInterstitialCommand.h>
 #import <YouTubeHeader/YTISectionListRenderer.h>
 #import <YouTubeHeader/YTIShelfRenderer.h>
 #import <YouTubeHeader/YTIWatchNextResponse.h>
