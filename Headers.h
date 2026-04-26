@@ -111,6 +111,7 @@
 #define BlockUpgradeDialogs @"YouModBlockUpgradeDialogs"
 #define HideAreYouThereDialog @"YouModHideAreYouThereDialog"
 #define FixesSlowMiniPlayer @"YouModFixesSlowMiniPlayer"
+#define DisablesNewMiniPlayer @"YouModDisablesNewMiniPlayer"
 #define DisablesSnackBar @"YouModDisablesSnackBar"
 #define HideStartupAni @"YouModHideStartupAnimations"
 #define HidePlayInNextQueue @"YouModHidePlayInNextQueue"

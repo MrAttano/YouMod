@@ -50,6 +50,14 @@ static NSBundle *YouModBundle() {
     }
     BOOL foundKeys = NO;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    // Remove old keys
+    for (NSString *key in [defaults dictionaryRepresentation]) {
+        if ([key hasPrefix:Prefix]) {
+            [defaults removeObjectForKey:key];
+        }
+    }
+    [defaults synchronize];
+    // Set new key from file
     for (NSString *key in importedData) {
         if ([key hasPrefix:Prefix]) {
             [defaults setObject:importedData[key] forKey:key];

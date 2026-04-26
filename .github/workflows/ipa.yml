@@ -339,7 +339,7 @@ jobs:
           files: YouMod_${{ env.YT_VERSION }}_v${{ env.YOUMOD_VERSION }}.ipa
           draft: true
 
-      - name: Job Summary - Build Conplete
+      - name: Job Summary - Build Complete
         run: |
           echo -e '### 🛠️ Build IPA with tweaks Complete!' >> $GITHUB_STEP_SUMMARY
 
