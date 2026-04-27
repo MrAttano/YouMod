@@ -56,11 +56,11 @@
 "HIDE_SHORTS_SHELF_DESC" = "Hide Shorts shelf from the feed, including in the Subscriptions tab.";
 "HIDE_SEARCH_HISTORY" = "Hide search history";
 "HIDE_SEARCH_HISTORY_DESC" = "Hide previous search history and suggestions when using the search bar.\nNOTE: Your search history will still be accessible in your other YouTube clients.";
-"HIDE_SUB_BUTTON" = "Hide Subscribe Button";
+"HIDE_SUB_BUTTON" = "Hide Subscribe button";
 "HIDE_SUB_BUTTON_DESC" = "Hides the subscribe button from channels and video descriptions.";
-"HIDE_SHOP_BUTTON" = "Hide Shopping Button";
+"HIDE_SHOP_BUTTON" = "Hide Shopping button";
 "HIDE_SHOP_BUTTON_DESC" = "Hides the shopping/store button from channels descriptions.";
-"HIDE_MEMBER_BUTTON" = "Hide Membership Button";
+"HIDE_MEMBER_BUTTON" = "Hide Membership button";
 "HIDE_MEMBER_BUTTON_DESC" = "Hides the 'Join' button from channels and video descriptions.";
 
 "PLAYER" = "Player";

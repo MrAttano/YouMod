@@ -25,7 +25,6 @@ static NSString *accessGroupID() {
     return accessGroup;
 }
 
-
 // YouTube-X (https://github.com/PoomSmart/YouTube-X)
 static BOOL isProductList(YTICommand *command) {
     if ([command respondsToSelector:@selector(yt_showEngagementPanelEndpoint)]) {
