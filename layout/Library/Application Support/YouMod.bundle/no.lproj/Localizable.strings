@@ -177,7 +177,7 @@
 "DISABLES_SNACK_BAR_DESC" = "Skjul.";
 "HIDE_STARTUP_ANIMATIONS" = "Skjul oppstartsanimasjoner";
 "HIDE_STARTUP_ANIMATIONS_DESC" = "Skjul.";
-"HIDE_PLAY_IN_NEXT_QUEUE" = "Skjul 'Spill neste'';
+"HIDE_PLAY_IN_NEXT_QUEUE" = "Skjul 'Spill neste'";
 "HIDE_PLAY_IN_NEXT_QUEUE_DESC" = "Skjul.";
 "HIDE_LIKE_DISLIKE_VOTES" = "Skjul varsler";
 "HIDE_LIKE_DISLIKE_VOTES_DESC" = "Skjul.";
