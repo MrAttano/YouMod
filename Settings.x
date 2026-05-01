@@ -498,6 +498,7 @@ static NSString *GetCacheSize() { // YTLite - @dayanch96
         HideCastButtonNav: @YES,
         HideCastButtonPlayer: @YES,
         BackgroundPlayback: @YES,
+        OldQualityPicker: @YES,
     }];
     %init;
 }
