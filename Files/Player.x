@@ -2,6 +2,7 @@
 
 float playbackRate = 1.0;
 
+/*
 static void YouModAddEndTime(YTPlayerViewController *self, YTSingleVideoController *video, YTSingleVideoTime *time) {
     if (!IS_ENABLED(ShowExtraTimeRemaining)) return;
 
@@ -29,6 +30,7 @@ static void YouModAddEndTime(YTPlayerViewController *self, YTSingleVideoControll
         [durationLabel sizeToFit];
     }
 }
+*/
 
 %hook YTMainAppControlsOverlayView
 // Hide autoplay Switch
@@ -306,6 +308,7 @@ static void YouModAddEndTime(YTPlayerViewController *self, YTSingleVideoControll
     [watchController showFullScreen];
 }
 
+/*
 - (void)singleVideo:(YTSingleVideoController *)video currentVideoTimeDidChange:(YTSingleVideoTime *)time {
     %orig;
     YouModAddEndTime(self, video, time);
@@ -315,6 +318,7 @@ static void YouModAddEndTime(YTPlayerViewController *self, YTSingleVideoControll
     %orig;
     YouModAddEndTime(self, video, time);
 }
+*/
 
 - (void)setPlaybackRate:(float)rate {
     playbackRate = rate;
