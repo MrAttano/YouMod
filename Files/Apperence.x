@@ -10,6 +10,24 @@ static BOOL isDarkMode(UIView *view) {
 
 // OLED theme (uYouEnhanced)
 %group OLEDTheme
+%hook YTColor
++ (UIColor *)black0 {
+    return [UIColor blackColor];
+}
++ (UIColor *)black1 {
+    return [UIColor blackColor];
+}
++ (UIColor *)black2 {
+    return [UIColor blackColor];
+}
++ (UIColor *)black3 {
+    return [UIColor blackColor];
+}
++ (UIColor *)black4 {
+    return [UIColor blackColor];
+}
+%end
+
 %hook YTCommonColorPalette
 - (UIColor *)baseBackground {
     return self.pageStyle == 1 ? [UIColor blackColor] : %orig;
