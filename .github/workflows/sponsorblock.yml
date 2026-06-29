@@ -344,7 +344,7 @@ jobs:
       
       
       - name: Get YTPlaybackFix .deb
-        run: wget https://github.com/Mark02-2012/YTPlaybackFix/releases/download/v0.2/com.mark02-2012.ytplaybackfix_0.2_iphoneos-arm64.deb
+        run: wget https://github.com/Mark02-2012/YTPlaybackFix/releases/download/v0.1/com.mark02-2012.ytplaybackfix_0.1_iphoneos-arm64.deb
            
 
       - name: Build YouMod
